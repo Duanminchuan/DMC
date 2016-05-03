@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/px20" >
+
+    <TextView
+        android:id="@+id/tv_photo_album_item_tile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="2012年1月1日"
+        android:textSize="@dimen/px24" />
+
+    <com.dream.cutepet.view.MyGridView
+        android:id="@+id/gv_photoalbum_item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/px16"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/px16" />
+
+</LinearLayout>

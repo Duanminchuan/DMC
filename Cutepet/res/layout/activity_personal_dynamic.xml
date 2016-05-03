@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人动态 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/px20"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_dynamic_petmessage_setMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px28"
+                    android:background="@drawable/selector_dynamic_background"
+                    android:paddingBottom="@dimen/px12"
+                    android:paddingTop="@dimen/px12"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_personal_dynamic_icon"
+                        android:layout_width="@dimen/px140"
+                        android:layout_height="@dimen/px140"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px12"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shape_circle"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/weidenglu1" />
+
+                    <TextView
+                        android:id="@+id/tv_personal_dynamic_name_before_perfect_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_personal_dynamic_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px20"
+                        android:background="@drawable/yuanjiaojuxing4"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="完善资料"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px28" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_dynamic_petmessage_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px28"
+                    android:background="@drawable/selector_dynamic_background"
+                    android:paddingBottom="@dimen/px12"
+                    android:paddingTop="@dimen/px12"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_personal_dynamic_icon_after_landing"
+                        android:layout_width="@dimen/px140"
+                        android:layout_height="@dimen/px140"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px12"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shape_circle"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/weidenglu1" />
+
+                    <TextView
+                        android:id="@+id/tv_personal_dynamic_name_after_landing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_personal_dynamic_icon_after_landing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px20"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="呆呆"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:id="@+id/tv_personal_dynamic_petNumber_after_landing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_personal_dynamic_name_after_landing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px10"
+                        android:gravity="center"
+                        android:text="萌宠号1008611"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/px20" />
+
+                    <LinearLayout
+                        android:id="@+id/after_perfect_information_layout_midlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_personal_dynamic_petNumber_after_landing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px10"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_personal_dynamic_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/man" />
+
+                        <TextView
+                            android:id="@+id/tv_personal_dynamic_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="@dimen/px5"
+                            android:text="波斯猫"
+                            android:textColor="#686868"
+                            android:textSize="@dimen/px20" />
+
+                        <TextView
+                            android:id="@+id/tv_personal_dynamic_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_marginLeft="@dimen/px5"
+                            android:text="今年3岁"
+                            android:textColor="#686868"
+                            android:textSize="@dimen/px20" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_personal_dynamic_autograph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/after_perfect_information_layout_midlayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px10"
+                        android:text="个性签名：TA今天很懒什么都没有留下！！！"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/px20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlayout_dynamic_petmessage_unlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/px28"
+                    android:background="@drawable/selector_dynamic_background"
+                    android:paddingBottom="@dimen/px12"
+                    android:paddingTop="@dimen/px12"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/iv_personal_dynamic_icon_before_landing"
+                        android:layout_width="@dimen/px140"
+                        android:layout_height="@dimen/px140"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px12"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shape_circle"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/weidenglu1" />
+
+                    <TextView
+                        android:id="@+id/tv_personal_dynamic_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_personal_dynamic_icon_before_landing"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="未登录"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px28" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px28"
+                    android:layout_marginRight="@dimen/px28"
+                    android:background="@drawable/shape_dynamic_album_bian"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/px23"
+                        android:layout_marginLeft="@dimen/px16"
+                        android:layout_marginTop="@dimen/px23"
+                        android:text="@string/photoAlbum"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px28" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px1"
+                        android:background="#f0f0f0" />
+
+                    <com.dream.cutepet.view.MyGridView
+                        android:id="@+id/gv_personal_dynamic_album"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="3"
+                        android:padding="@dimen/px16"
+                        android:scrollbars="none"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_personal_dynamic_gotoFusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/px50"
+            android:layout_marginRight="@dimen/px16"
+            android:src="@drawable/fusion_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

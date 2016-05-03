@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <!-- 密保设置 -->
+
+    <include layout="@layout/top_menu" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px40" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题1:"
+            android:textColor="#000000"
+            android:textSize="@dimen/px28" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:background="#ffffff"
+            android:hint="请输入问题"
+            android:textColor="#C9C3BD"
+            android:textSize="@dimen/px28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:hint="答案"
+        android:paddingLeft="@dimen/px40"
+        android:textSize="@dimen/px28" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px40"
+       android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题2:"
+            android:textSize="@dimen/px28"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:background="#ffffff"
+            android:hint="请输入问题"
+            android:textColor="#C9C3BD"
+            android:textSize="@dimen/px28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:hint="答案"
+        android:paddingLeft="@dimen/px40"
+        android:textSize="@dimen/px28" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px40"
+       android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题3:"
+            android:textSize="@dimen/px28"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:background="#ffffff"
+            android:hint="请输入问题"
+            android:textColor="#C9C3BD"
+            android:textSize="@dimen/px28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:hint="答案"
+        android:paddingLeft="@dimen/px40"
+        android:textSize="@dimen/px28" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/iv_dynamic_gridview_picture"
+        android:layout_width="@dimen/px192"
+        android:layout_height="@dimen/px178"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" 
+        android:src="@drawable/album_default"/>
+
+    <TextView
+        android:id="@+id/tv_dynamic_gridview_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px28"
+        android:layout_alignBottom="@id/iv_dynamic_gridview_picture"
+        android:layout_alignLeft="@id/iv_dynamic_gridview_picture"
+        android:layout_alignRight="@id/iv_dynamic_gridview_picture"
+        android:paddingLeft="@dimen/px5"
+        android:background="#f6f6f6"
+        android:alpha="0.3"
+        android:text="嘿嘿"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px20" />
+    
+    <TextView
+        android:id="@+id/tv_dynamic_gridview_newAlbum"
+        android:layout_width="@dimen/px192"
+        android:layout_height="@dimen/px178"
+        android:background="@color/title_background"
+        android:text="+新建相册"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px20"
+        android:visibility="gone" />
+
+</RelativeLayout>

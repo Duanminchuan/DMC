@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee" >
+
+    <LinearLayout
+        android:id="@+id/top_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginRight="@dimen/px24"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px20"
+            android:paddingLeft="@dimen/px16"
+            android:paddingTop="@dimen/px20" >
+
+            <ImageView
+                android:id="@+id/iv_homepage_personage_icon"
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/px17"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_tx" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_homepage_personage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="苏菲123213"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/px28" />
+
+                <TextView
+                    android:id="@+id/tv_homepage_personage_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px19"
+                    android:text="12天前"
+                    android:textColor="#ABABAB"
+                    android:textSize="@dimen/px24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage_personage_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_homepage_personage_picture"
+                android:layout_width="@dimen/px370"
+                android:layout_height="@dimen/px250"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_homepage_personage_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_homepage_personage_picture"
+                android:layout_alignLeft="@id/iv_homepage_personage_picture"
+                android:layout_alignRight="@id/iv_homepage_personage_picture"
+                android:alpha="0.2"
+                android:background="@android:color/black"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/px8"
+                android:paddingTop="@dimen/px8"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_homepage_personage_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/px28"
+            android:layout_marginLeft="@dimen/px17"
+            android:layout_marginRight="@dimen/px17"
+            android:layout_marginTop="@dimen/px30"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/px24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/px17"
+            android:layout_marginRight="@dimen/px17"
+            android:background="@drawable/fenge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/px17"
+            android:layout_marginRight="@dimen/px17"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_homepage_personage_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="@dimen/px7"
+                android:gravity="center_vertical"
+                android:text="来自重庆 渝中区 上清诗"
+                android:textColor="#5ab7e3"
+                android:textSize="@dimen/px18" />
+
+            <TextView
+                android:id="@+id/tv_homepage_personage_getMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/message"
+                android:drawablePadding="@dimen/px7"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px10"
+                android:text="留言"
+                android:textColor="#333333"
+                android:textSize="@dimen/px18" />
+
+            <TextView
+                android:id="@+id/tv_homepage_personage_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:button="@null"
+                android:drawableLeft="@drawable/like"
+                android:drawablePadding="@dimen/px7"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px10"
+                android:text="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/px18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@drawable/shape_qiubaoyang"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_homepage_personage_getBaoyang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px24"
+            android:background="@color/background_huise"
+            android:paddingBottom="@dimen/px13"
+            android:paddingLeft="@dimen/px46"
+            android:paddingRight="@dimen/px47"
+            android:paddingTop="@dimen/px13"
+            android:text="求包养"
+            android:textColor="#83c9ea"
+            android:textSize="@dimen/px24" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_ta_dynamic_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_ta_dynamic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试名字" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_ta_dynamic_like"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="喜欢 99" />
+
+            <TextView
+                android:id="@+id/tv_ta_dynamic_attention"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="关注 99" />
+
+            <TextView
+                android:id="@+id/tv_ta_dynamic_fans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="粉丝 99" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_ta_dynamic_dogIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_ta_dynamic_dogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="贝贝" />
+
+        <TextView
+            android:id="@+id/tv_ta_dynamic_dogType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="金毛寻回犬" />
+
+        <TextView
+            android:id="@+id/tv_ta_dynamic_dogAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="1岁" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_ta_dynamic_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tv_ta_dynamic_AddAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加关注" />
+        <TextView
+            android:id="@+id/tv_ta_dynamic_sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发消息" />
+        
+    </LinearLayout>
+
+</LinearLayout>

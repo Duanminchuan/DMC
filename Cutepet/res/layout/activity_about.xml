@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <!-- 关于萌宠 -->
+
+    <include layout="@layout/top_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee" >
+
+        <ImageView
+            android:id="@+id/image_toxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_toxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px14"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宠萌Android版"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/px30"
+                android:layout_marginTop="@dimen/px14"
+                android:text="1.1.1.0"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_grade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="去评分"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="功能介绍"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="系统通知"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/linear_complain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="举报与投诉"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/linear_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="检查新版本"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+</LinearLayout>

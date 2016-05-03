@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <!-- 检查最新版本 -->
+
+    
+	
+    <include layout="@layout/top_menu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef" >
+
+        <ImageView
+            android:id="@+id/image_toxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_toxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px17"
+            android:text="萌宠"
+            android:textColor="#454545"
+            android:textSize="@dimen/px40" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px64"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android版"
+            android:textColor="#454545"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px16"
+            android:text="1.0.0.1"
+            android:textSize="@dimen/px22"
+            android:textColor="#454545" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px16"
+            android:text="已经是最新版本"
+            android:textColor="#454545"
+            android:textSize="@dimen/px20" />
+    </LinearLayout>
+
+</LinearLayout>

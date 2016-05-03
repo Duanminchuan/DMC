@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <!-- 账户管理 -->
+
+    <include layout="@layout/top_menu" />
+
+    <LinearLayout
+        android:id="@+id/linear_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/linear_change_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="修改手机号"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:padding="@dimen/px10"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/linear_change_mail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="修改邮箱"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/px10"
+            android:layout_marginRight="@dimen/px40"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/linear_security"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_weight="1"
+            android:text="设置锁屏密码"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px10"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/px40"
+            android:src="@drawable/youjiantou" />
+    </LinearLayout>
+
+</LinearLayout>

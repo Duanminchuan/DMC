@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部公用菜单栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/bottom_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px5"
+            android:drawableTop="@drawable/selector_bottom_home"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px18"
+            android:paddingTop="@dimen/px18"
+            android:text="@string/homepage"
+            android:textColor="#454545"
+            android:textSize="@dimen/px18" />
+
+        <RadioButton
+            android:id="@+id/pet_ring"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px5"
+            android:drawableTop="@drawable/selector_bottom_pet"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px18"
+            android:paddingTop="@dimen/px18"
+            android:text="@string/pet_ring"
+            android:textColor="#454545"
+            android:textSize="@dimen/px18" />
+
+        <RadioButton
+            android:id="@+id/personal_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px5"
+            android:drawableTop="@drawable/selector_bottom_mine"
+            android:gravity="center"
+            android:paddingBottom="@dimen/px18"
+            android:paddingTop="@dimen/px18"
+            android:text="@string/personal_center"
+            android:textColor="#454545"
+            android:textSize="@dimen/px18" />
+    </RadioGroup>
+
+</LinearLayout>

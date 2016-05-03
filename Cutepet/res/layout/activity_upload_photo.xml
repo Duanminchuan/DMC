@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上传照片 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <TextView
+            android:id="@+id/tv_uploadPhoto_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/px31"
+            android:paddingLeft="@dimen/px40"
+            android:paddingRight="@dimen/px40"
+            android:paddingTop="@dimen/px31"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px32" />
+
+        <TextView
+            android:id="@+id/tv_uploadPhoto_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/px31"
+            android:paddingLeft="@dimen/px40"
+            android:paddingRight="@dimen/px40"
+            android:paddingTop="@dimen/px31"
+            android:text="相机"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px32" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/px20"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:padding="@dimen/px20"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="title_background">#FFDA44</color>
+    <color name="homepage_pet_title_color">#c9c3bd</color>
+    <color name="background_huise">#eeeeee</color>
+    <color name="chat_send_color">#8E8E8E</color>
+    <color name="chat_from_color">#ffffff</color>
+    <color name="newCicle">#ADD5E6</color>
+    <color name="newCicle_Point">#01A0E5</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/ed_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="说点什么吧"
+            android:paddingBottom="@dimen/px113"
+            android:paddingLeft="@dimen/px36"
+            android:paddingTop="@dimen/px38"
+            android:textColor="#686868"
+            android:textSize="@dimen/px36" />
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_write"
+            android:layout_marginBottom="@dimen/px30"
+            android:layout_marginLeft="@dimen/px31"
+            android:src="@drawable/jiahao" />
+
+        <View
+            android:id="@+id/fenge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_below="@id/add_image"
+            android:background="#f2ebd9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fenge"
+            android:layout_marginLeft="@dimen/px30"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="地点"
+                android:padding="@dimen/px15"
+                android:textColor="#333333"
+                android:textSize="@dimen/px36" />
+
+            <ImageView
+                android:id="@+id/cityMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px25"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/youyou" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/writetalk_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="@dimen/px15"
+        android:numColumns="3"
+        android:padding="@dimen/px15"
+        android:verticalSpacing="@dimen/px15" />
+
+</LinearLayout>

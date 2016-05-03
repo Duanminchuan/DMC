@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_menu" />
+
+    <ImageView
+        android:id="@+id/pet_strategy_details_image"
+        android:layout_width="@dimen/px720"
+        android:layout_height="@dimen/px452"
+        android:scaleType="fitXY"
+        android:src="@drawable/jinmao2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pet_strategy_details_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px46"
+            android:layout_marginTop="@dimen/px40"
+            android:gravity="center"
+            android:text="@string/breed"
+            android:textColor="#686868"
+            android:textSize="@dimen/px24" />
+
+        <LinearLayout
+            android:id="@+id/pet_strategy_details_rating_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pet_strategy_details_breed"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/pet_strategy_details_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px30"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/ratingbar_style"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/pet_strategy_details_ratingbar_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px21"
+                android:layout_marginRight="@dimen/px21"
+                android:text="@string/rating"
+                android:textColor="#616161"
+                android:textSize="@dimen/px20" />
+
+            <TextView
+                android:id="@+id/pet_strategy_details_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num"
+                android:textColor="#616161"
+                android:drawableLeft="@drawable/qian"
+                android:drawableStart="@drawable/qian"
+                android:textSize="@dimen/px20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pet_strategy_details_characteristic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pet_strategy_details_rating_linearlayout"
+            android:layout_marginTop="@dimen/px45"
+            android:gravity="center"
+            android:text="@string/characteristic"
+            android:textColor="#686868"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px40"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/pet_strategy_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/px40"
+        android:layout_marginLeft="@dimen/px36"
+        android:layout_marginRight="@dimen/px36"
+        android:layout_marginTop="@dimen/px40"
+        android:layout_weight="1"
+        android:text="@string/content"
+        android:includeFontPadding="true"
+        android:textColor="#454545"
+        android:textSize="@dimen/px24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pet_strategy_details_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pink"
+            android:drawableLeft="@drawable/shoucangkongxin"
+            android:drawablePadding="@dimen/px23"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px125"
+            android:paddingRight="@dimen/px110"
+            android:text="@string/collection"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:id="@+id/pet_strategy_details_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rec4"
+            android:drawableLeft="@drawable/dianping"
+            android:drawablePadding="@dimen/px23"
+            android:drawableStart="@drawable/dianping"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px132"
+            android:paddingRight="@dimen/px132"
+            android:text="@string/comment"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px24" />
+    </LinearLayout>
+
+</LinearLayout>

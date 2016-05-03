@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <RadioGroup
+            android:id="@+id/rg_petRing_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_petRing_square"
+                style="@style/style_homePageRbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/Square" />
+
+            <RadioButton
+                android:id="@+id/rbtn_petRing_dynamic"
+                style="@style/style_homePageRbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/dynamic" />
+        </RadioGroup>
+    </RelativeLayout> -->
+    <FrameLayout 
+        android:id="@+id/pet_collar_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></FrameLayout>
+<include layout="@layout/bottom_menu" />
+</LinearLayout>

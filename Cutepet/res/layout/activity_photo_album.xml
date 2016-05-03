@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 相册 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <RelativeLayout
+            style="@style/style_homePagePadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFDA44"
+            android:paddingTop="@dimen/px20" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/px22"
+                android:paddingLeft="@dimen/px36"
+                android:paddingRight="@dimen/px36"
+                android:paddingTop="@dimen/px22"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tv_PhotoAlbum_Upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px40"
+                android:text="@string/upload"
+                android:textColor="#333333"
+                android:textSize="@dimen/px32" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_photo_album_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/px20"
+        android:layout_weight="1" 
+        android:scrollbars="none"
+        android:divider="@null"
+        android:background="@android:color/white" >
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 时光轴 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <ImageView
+            android:id="@+id/iv_fusion_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/px22"
+            android:paddingBottom="@dimen/px22"
+            android:paddingLeft="@dimen/px36"
+            android:paddingRight="@dimen/px36"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fusion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px40" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_fusion_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/px20"
+        android:paddingTop="@dimen/px20"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

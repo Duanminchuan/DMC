@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px90"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/resources"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/top_menu_black"
+                android:text="@string/homepage"
+                android:textColor="#333333"
+                android:textSize="@dimen/px36" />
+
+            <RadioButton
+                android:id="@+id/strategy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px73"
+                android:button="@null"
+                android:drawableBottom="@drawable/top_menu_black"
+                android:text="@string/strategy"
+                android:textColor="#333333"
+                android:textSize="@dimen/px36" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mid_homepage_petstrategy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

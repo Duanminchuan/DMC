@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <TextView
+            android:id="@+id/tv_showphoto_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/px31"
+            android:paddingLeft="@dimen/px40"
+            android:paddingRight="@dimen/px40"
+            android:paddingTop="@dimen/px31"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px40" />
+
+        <TextView
+            android:id="@+id/tv_showphoto_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/px31"
+            android:paddingLeft="@dimen/px40"
+            android:paddingRight="@dimen/px40"
+            android:paddingTop="@dimen/px31"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px32" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_showphoto_item_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="90dip"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:padding="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+</LinearLayout>

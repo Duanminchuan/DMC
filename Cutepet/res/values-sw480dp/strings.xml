@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CutePet</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pet_ring">宠物圈</string>
+    <string name="personal_center">我的</string>
+    <string name="title">标题</string>
+    <string name="dynamic">动态</string>
+    <string name="babyshow">baby秀</string>
+    <string name="nickname">昵称</string>
+    <string name="dynamic_time">动态时间</string>
+    <string name="add_attention">+关注</string>
+    <string name="dynamic_content">动态内容</string>
+    <string name="praise">赞</string>
+    <string name="comment">评论</string>
+    <string name="share">分享</string>
+    <string name="dynamic_comment_content_1">评论人1:评论1</string>
+    <string name="dynamic_comment_content_2">评论人2:评论2</string>
+    <string name="dynamic_comment_content_3">评论人3:评论3</string>
+    <string name="more">更多</string>
+    <string name="comment_input">我也说一句</string>
+    <string name="send">发送</string>
+    <string name="personal_dynamic">个人中心</string>
+    <string name="MySelfie">我的自拍</string>
+    <string name="MyName">我是</string>
+    <string name="ThisYear">今年</string>
+    <string name="cancel">取消</string>
+    <string name="newPhotoAlbum">新建相册</string>
+    <string name="accomplish">完成</string>
+    <string name="AlbumName">相册名称：</string>
+    <string name="AlbumDescribe">相册描述：</string>
+    <string name="upload">上传</string>
+    <string name="photo">照片</string>
+    <string name="photoAlbum">相册</string>
+    <string name="ok">确定</string>
+    <string name="pet_name">名字：</string>
+    <string name="pet_breed">品种：</string>
+    <string name="test_data">测试数据</string>
+    <string name="fusion">时光轴</string>
+    <string name="petHome">资源</string>
+    <string name="strategy">攻略</string>
+    <string name="pstStore">宠物店</string>
+    <string name="personage">个人</string>
+    <string name="name">名字</string>
+    <string name="region">地区</string>
+    <string name="comma">,</string>
+    <string name="name_data">名字数据</string>
+    <string name="region_data">地区数据</string>
+    <string name="pet_strategy_content">宠物攻略具体内容</string>
+    <string name="homepage">首页</string>
+    <string name="Square">广场</string>
+    <string name="tel_ta">联系Ta</string>
+    <string name="neckname">昵称</string>
+    <string name="time">时间</string>
+    <string name="address">地址</string>
+    <string name="comment_content">评论内容</string>
+    <string name="comment_time">评论时间</string>
+    <string name="breed">品种</string>
+    <string name="age">年龄</string>
+    <string name="myalbum">我的相册</string>
+    <string name="num">数量</string>
+    <string name="square_content">广场内容</string>
+    <string name="square_time">广场时间</string>
+    <string name="storeMessage">店铺详情</string>
+    <string name="issue">发布</string>
+    <string name="petInformation">宠物详情</string>
+    <string name="resources">资源</string>
+    <string name="rating">评分</string>
+    <string name="characteristic">特点</string>
+    <string name="content">内容</string>
+    <string name="collection">收藏</string>
+    <string name="introduce">介绍</string>
+    <string name="message">信息</string>
+    <string name="contacts">联系人</string>
+    <string name="share_app">萌宠app是一款新闻资讯应用,主要为用户提供跟萌宠相关的资讯信息。在萌宠2016app中你可查看萌宠的最新资讯,也可将喜欢的它分享到微信、微博</string>
+
+    <item name="tag_message_first" type="id"></item>
+    <item name="tag_message_second" type="id"></item>
+    <item name="tag_message_third" type="id"></item>
+
+</resources>

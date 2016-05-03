@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_menu" />
+    
+    <ListView
+        android:id="@+id/dynamic_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#e4e4e4"
+        android:dividerHeight="@dimen/px1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px23"
+        android:background="@drawable/duihuakuangwaikuang" >
+
+        <EditText
+            android:id="@+id/dynamic_details_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/comment_input"
+            android:paddingLeft="@dimen/px24"
+            android:textColor="#333333"
+            android:textSize="@dimen/px28" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/px20"
+            android:src="@drawable/xiao3" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <com.dream.cutepet.view.RefreshableView
+        android:id="@+id/square_refreshableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/square_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/px15"
+            android:layout_weight="1"
+            android:divider="#EEEEEE"
+            android:dividerHeight="@dimen/px25"
+            android:scrollbars="none" />
+    </com.dream.cutepet.view.RefreshableView>
+
+</LinearLayout>

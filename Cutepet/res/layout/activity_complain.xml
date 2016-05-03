@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+	<!--举报与投诉  -->
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44" >
+
+        <ImageView
+            android:id="@+id/image_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_marginRight="@dimen/px40"
+            android:layout_marginTop="@dimen/px20"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="举报与投诉"
+            android:textColor="#333333"
+            android:textSize="@dimen/px40" />
+    </RelativeLayout>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px300"
+        android:layout_marginLeft="@dimen/px40"
+        android:layout_marginRight="@dimen/px40"
+        android:hint="您的举报与投诉将有利于我们改进产品与服务"
+        android:textSize="@dimen/px28"
+        android:gravity="top"
+        android:textColor="#c9c3bd"
+        android:paddingTop="@dimen/px30"/>
+    
+    
+</LinearLayout>

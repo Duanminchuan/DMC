@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/homepage_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD248"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/px30" >
+
+            <RadioButton
+                android:id="@+id/resources"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableBottom="@drawable/top_menu_black"
+                android:gravity="center"
+                android:text="@string/homepage"
+                android:textColor="#333333"
+                android:textSize="@dimen/px36" />
+
+            <RadioButton
+                android:id="@+id/strategy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px73"
+                android:button="@null"
+                android:drawableBottom="@drawable/top_menu_black"
+                android:gravity="center"
+                android:text="@string/strategy"
+                android:textColor="#333333"
+                android:textSize="@dimen/px36" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dynamic_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/rg_petRing_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_petRing_square"
+                style="@style/style_homePageRbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/Square" />
+
+            <RadioButton
+                android:id="@+id/rbtn_petRing_dynamic"
+                style="@style/style_homePageRbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/dynamic" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/personcenter_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDA44"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/cutpet_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/bottom_menu" />
+
+</LinearLayout>

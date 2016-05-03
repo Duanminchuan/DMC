@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/px6"
+    android:paddingRight="@dimen/px6" >
+
+    <ImageView
+        android:id="@+id/iv_fusion_item_icon"
+        android:layout_width="@dimen/px100"
+        android:layout_height="@dimen/px100"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/px41"
+        android:src="@drawable/icon_tx" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/iv_fusion_item_icon"
+        android:layout_alignRight="@id/iv_fusion_item_icon"
+        android:layout_below="@id/iv_fusion_item_icon" >
+
+        <View
+            android:id="@+id/view_fusion_item_length"
+            android:layout_width="1dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:background="#AFACAC" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_fusion_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30"
+        android:layout_marginBottom="@dimen/px25"
+        android:layout_toRightOf="@id/iv_fusion_item_icon"
+        android:gravity="center"
+        android:text="2012.01.01"
+        android:textColor="#3c3c3c"
+        android:textSize="@dimen/px28" />
+
+    <TextView
+        android:id="@+id/tv_fusion_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fusion_item_time"
+        android:layout_marginBottom="@dimen/px28"
+        android:layout_marginRight="@dimen/px20"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@id/iv_fusion_item_icon"
+        android:singleLine="false"
+        android:text="我是内容我是内容。。。"
+        android:textColor="#3c3c3c"
+        android:textSize="@dimen/px28" />
+
+    <com.dream.cutepet.view.MyGridView
+        android:id="@+id/gv_fusion_item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_fusion_item_content"
+        android:layout_below="@id/tv_fusion_item_content"
+        android:layout_marginRight="@dimen/px20"
+        android:horizontalSpacing="@dimen/px12"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/px12" />
+
+</RelativeLayout>

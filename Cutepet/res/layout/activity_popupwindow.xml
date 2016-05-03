@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px196"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px35"
+        android:paddingRight="@dimen/px35"
+        android:paddingTop="@dimen/px30" >
+
+        <RadioButton
+            android:id="@+id/button_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px33"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px13"
+            android:drawableTop="@drawable/weixin"
+            android:gravity="center_horizontal"
+            android:text="微信"
+            android:textColor="#333333"
+            android:textSize="@dimen/px20" />
+
+        <RadioButton
+            android:id="@+id/button_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px33"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px13"
+            android:drawableTop="@drawable/qq_q"
+            android:gravity="center_horizontal"
+            android:text="QQ"
+            android:textColor="#333333"
+            android:textSize="@dimen/px20" />
+
+        <RadioButton
+            android:id="@+id/button_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px33"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px13"
+            android:drawableTop="@drawable/wbw"
+            android:gravity="center_horizontal"
+            android:text="新浪微博"
+            android:textColor="#333333"
+            android:textSize="@dimen/px20" />
+
+        <RadioButton
+            android:id="@+id/button_qqkongjian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px33"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px13"
+            android:drawableTop="@drawable/qqkongjian"
+            android:gravity="center_horizontal"
+            android:text="QQ空间"
+            android:textColor="#333333"
+            android:textSize="@dimen/px20" />
+
+        <RadioButton
+            android:id="@+id/button_pnegyouquan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/px13"
+            android:drawableTop="@drawable/friend"
+            android:gravity="center_horizontal"
+            android:text="朋友圈"
+            android:textColor="#333333"
+            android:textSize="@dimen/px20" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:layout_marginLeft="@dimen/px35"
+        android:layout_marginRight="@dimen/px35"
+        android:background="#ffda44"
+        android:text="取消" />
+
+</LinearLayout>

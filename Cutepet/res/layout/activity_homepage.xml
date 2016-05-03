@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登陆后主页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <com.dream.cutepet.view.RefreshableView
+        android:id="@+id/home_pager_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_homepage_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/px10"
+            android:layout_weight="1"
+            android:divider="#eeeeee"
+            android:dividerHeight="@dimen/px20"
+            android:scrollbars="none" />
+    </com.dream.cutepet.view.RefreshableView>
+
+    <LinearLayout
+        android:id="@+id/message_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px24"
+            android:layout_marginRight="@dimen/px24"
+            android:layout_weight="5"
+            android:hint="请留言"
+            android:textColor="#333333"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:id="@+id/ensure_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/px10"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:id="@+id/cancel_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/px10"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="@dimen/px24" />
+    </LinearLayout>
+
+</LinearLayout>
